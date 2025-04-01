@@ -9,52 +9,54 @@
 div{
     background: pink;
     width: 200px;
-    height: 500px;
+    height: 200px;
     border: 2px solid #000;
     padding: 20px;
     margin: 20px;
     border-radius: 20px;
+    box-shadow: 10px 10px 5px #c9146e;
 }    
-#one{
-  box-shadow: 10px 10px 5px #c9146e;
-  position: static;
-}
+
 #two{
-  background-color: aquamarine;
-  box-shadow: 10px 10px 5px #00af75;
-  position: relative;
-  left: 100px;
-  top: -100px;
+    background: turquoise;
+    border-radius: 50px;
+    border-top-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    box-shadow: 10px 10px 5px rgb(8, 108, 98);
 }
+
 #three{
-  background-color: cadetblue;
-  box-shadow: 10px 10px 5px #36a2a6;
-  position: absolute;
-  left: 50px;
+    background: blueviolet;
+    border-top-right-radius: 2px;
+    border-bottom-left-radius: 2px;
+    box-shadow: 10px 10px 5px #4f0b8e;
+
 }
+
 #four{
-  background-color: darkcyan;
-  box-shadow: 10px 10px 5px #003c3c;
-  position: fixed;
-  right: 0;
-  bottom: 0;
+    background: blue;
+    border-top-right-radius: 2px;
+    border-bottom-left-radius: 2px;
+    box-shadow: 10px 10px 5px #020267;
+   margin-bottom: 500px;
 }
-#five{
-  background-color: lavender;
-  box-shadow: 10px 10px 5px #6262ff;
-  position: sticky;
-  top: o;
-  z-index: 100;
-}
+a {color: white;}
   </style>
 </head>
             
 <body>
-<div id="one"></div>
-<div id="five"></div>
-<div id="two"></div>
-<div id="three"></div>
-<div id="four"></div>
+
+<div id="one">
+ <p>this is content</p>
+  </div>
+  <div id="two"></div>
+  <div id="three">
+   <div id="four">   <ul>
+    <li><a href="index.html">home</a></li>
+   </ul></div>
+   </div>
+
+
 </body>
 
 </html>
