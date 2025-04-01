@@ -1,0 +1,60 @@
+<!doctype html>
+            
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>boxes page</title>
+  <style>
+div{
+    background: pink;
+    width: 200px;
+    height: 500px;
+    border: 2px solid #000;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 20px;
+}    
+#one{
+  box-shadow: 10px 10px 5px #c9146e;
+  position: static;
+}
+#two{
+  background-color: aquamarine;
+  box-shadow: 10px 10px 5px #00af75;
+  position: relative;
+  left: 100px;
+  top: -100px;
+}
+#three{
+  background-color: cadetblue;
+  box-shadow: 10px 10px 5px #36a2a6;
+  position: absolute;
+  left: 50px;
+}
+#four{
+  background-color: darkcyan;
+  box-shadow: 10px 10px 5px #003c3c;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+}
+#five{
+  background-color: lavender;
+  box-shadow: 10px 10px 5px #6262ff;
+  position: sticky;
+  top: o;
+  z-index: 100;
+}
+  </style>
+</head>
+            
+<body>
+<div id="one"></div>
+<div id="five"></div>
+<div id="two"></div>
+<div id="three"></div>
+<div id="four"></div>
+</body>
+
+</html>
