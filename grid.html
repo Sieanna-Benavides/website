@@ -1,0 +1,81 @@
+<!doctype html>
+            
+<html lang="en">
+
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+  <style>
+    Body{
+      background-color: #000
+    }
+    .container{
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      gap: 4px 4px;
+      grid-auto-flow: row;
+      grid-template-areas:
+        "header header"
+        "sideleft main"
+        "footer footer";
+    } 
+    .header{
+      grid-area: header;
+      background: pink;
+      box-shadow: 6px 5px 6px #fa8296;
+      border-radius: 10px;
+      font-family: "Rock Salt", cursive;
+      font-weight: 400;
+      font-style: normal;
+      display: flex;
+      justify-content: center;
+    }
+    .sideleft{
+      grid-area: sideleft;
+      background-color: #b3b3ff;
+      box-shadow: 6px 5px 6px #7171ff;
+      border-radius: 10px;
+      font-family: "Shadows Into Light", cursive;
+      font-weight: 400;
+      font-style: normal;
+      display: flex;
+      justify-content: center;
+    }
+    .main{
+      grid-area: main;
+      background-color: #7bb4ff;
+      box-shadow: 6px 5px 6px #2785ff;
+      border-radius: 10px;
+      font-family: "Shadows Into Light", cursive;
+      font-weight: 400;
+      font-style: normal;
+      display: flex;
+      justify-content: center;
+    }
+    .footer{
+      grid-area: footer;
+      background-color: #9affff;
+      box-shadow: 6px 5px 6px #00e8e8;
+      border-radius: 10px;
+      font-family: "Shadows Into Light", cursive;
+      font-weight: 400;
+      font-style: normal;
+      display: flex;
+      justify-content: center;
+    }
+    
+  </style>
+</head>
+            
+<body>
+  <div class="container">
+    <div class="header"><h1>Summer BucketList</h1></div>
+    <div class="sideleft"><h2>Have Fun!</h2></div>
+    <div class="main"><p class id="one">Watch sunsets/sunrises, go to the beach, concerts, ice cream, late night drives, music, picnics, water park, movies, swimming, shopping, fireworks, boating, pictures, pool days, star gazing, bon fire, and make everything count!</p></div>
+    <div class="footer"><h2 class id="two">Take lots of pictures, enjoy the summer and make lots of memories!</h2></div>
+  </div>
+</body>
+
+</html>
